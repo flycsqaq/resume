@@ -1,0 +1,28 @@
+.layout
+  display: flex
+  flex-wrap: wrap
+  line-height: 1.5em
+  background-color: #e7e9fd
+  min-height: 100vh
+  &>*
+    flex-basis: 50%
+
+@media(max-width: 9999px)
+  .layout
+    padding: 0 15%
+
+@media(max-width: 1200px)
+  .layout
+    padding: 0 10%
+
+@media(max-width: 800px)
+  .layout
+    padding: 0 5%
+    &>*
+      flex-basis: 100%
+
+@media(max-width: 600px)
+  .layout
+    padding: 0
+
+

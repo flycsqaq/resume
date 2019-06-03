@@ -1,0 +1,24 @@
+.project
+  padding: 10px
+  position: relative
+  .btn-group
+    float: right
+    max-height: 0
+    overflow: hidden
+    transition: max-height .3s linear
+    button
+      border: none
+      background-color: transparent
+      cursor: pointer
+      outline: none
+  &:hover
+    .btn-group
+      max-height: 20px
+      transition: max-height 1s linear
+
+  dl
+    padding: 0 1em
+    dt
+      margin-top: 1em
+    dd
+      text-indent: 2em
