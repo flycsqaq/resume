@@ -1,6 +1,16 @@
 import React from 'react'
 
-export function Paper(props: any) {
+interface Props {
+  containerClass?: string
+  contentClass?: string
+  containerStyle?: Object
+  contentStyle?: Object
+  onMouseEnter?: () => void
+  onMouseLeave?: () => void
+  children?: any
+}
+
+export function Paper(props: Props) {
   return (
     <div
       className={props.containerClass ? `paper-container ${props.containerClass}`: 'paper-container'}

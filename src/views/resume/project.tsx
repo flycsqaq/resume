@@ -4,12 +4,12 @@ import { Paper } from '../../shared/paper';
 export default () => {
   let number = 1
 
-  function handleIncrease(counter: number): any {
+  function handleIncrease(counter: number): void {
     const project = document.getElementsByClassName('project')[0] as HTMLElement
     const id = setInterval(changeTransform, 16)
-    let count = 0
+    let count: number = 0
 
-    function changeTransform() {
+    function changeTransform(): void {
       if (count++ < counter * 5) {
         number += .02
         project.style.transform = `scale(${number}, ${number})`
@@ -18,7 +18,7 @@ export default () => {
       }
     }
   }
-  function handleInit() {
+  function handleInit(): void {
     const project = document.getElementsByClassName('project')[0] as HTMLElement
     const id = setInterval(changeTransform, 16)
     function changeTransform() {
@@ -37,7 +37,7 @@ export default () => {
   function handleDecrease(counter: number) {
     const project = document.getElementsByClassName('project')[0] as HTMLElement
     const id = setInterval(changeTransform, 16)
-    let count = 0
+    let count: number = 0
     
     function changeTransform() {
       if (count++ < counter * 5) {
